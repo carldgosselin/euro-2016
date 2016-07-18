@@ -4,7 +4,7 @@
 
 # Capstone project - euro 2016
 
-Reinforcement Learning Project
+...
 
 ## Install
 
