@@ -19,3 +19,17 @@ https://www.pygame.org/wiki/GettingStarted
 ## Run
 
 ...
+
+## Observations on team and player data
+
+Data from uefa website:  http://www.uefa.com/uefaeuro/season=2016/statistics/
+
+- All team-related data had the exact same rows and columns.  
+- The team-related data could be easily amalgamated into a single tab in an excel spreadsheet
+
+- On the other hand, the player-related data could not be easily amalgamated into a single
+tab in a spreadsheet as the number of rows (players) varied from one measurement to another
+- e.g. total number of players in tournament is 453 players
+- e.g. some of the measurement excluded players who had "0" in all columns/measurements
+- Action:  will need to manually input data into the master player_data spreadsheet
+
