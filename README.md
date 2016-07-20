@@ -41,14 +41,23 @@ goals per match: 2.12
 average minutes per goal: 44
 
 Timing of goals...
+
 1 to 15 min: 	13
+
 16 to 30 min: 	8
+
 31 to 45: 		20
+
 45+ min: 		1
+
 46 to 60 min: 	21
+
 61 to 75 min: 	15
+
 76 to 90 min: 	19
+
 90+ min: 		9
+
 91 to 120 min:	2
 
 
