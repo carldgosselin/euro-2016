@@ -33,6 +33,9 @@ tab in a spreadsheet as the number of rows (players) varied from one measurement
 - e.g. some of the measurement excluded players who had "0" in all columns/measurements
 - Action:  will need to manually input data into the master player_data spreadsheet
 
+- Need to be mindful of duplication of name for different players such as Éder for Italy and Éder for portugal
+- Action:  updated names as follows:  Éder (Italy) , Éder (Portugal)
+
 ## Other Statistics
 
 total matches played: 51	
