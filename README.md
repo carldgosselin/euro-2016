@@ -24,9 +24,11 @@ https://www.pygame.org/wiki/GettingStarted
 
 Data from uefa website:  http://www.uefa.com/uefaeuro/season=2016/statistics/
 
+Team-related data
 - All team-related data had the exact same rows and columns.  
 - The team-related data could be easily amalgamated into a single tab in an excel spreadsheet
 
+Player-related data
 - On the other hand, the player-related data could not be easily amalgamated into a single
 tab in a spreadsheet as the number of rows (players) varied from one measurement to another
 - e.g. total number of players in tournament is 453 players
@@ -35,6 +37,9 @@ tab in a spreadsheet as the number of rows (players) varied from one measurement
 
 - Need to be mindful of duplication of name for different players such as Éder for Italy and Éder for portugal
 - Action:  updated names as follows:  Éder (Italy) , Éder (Portugal)
+
+Goalkeeping-related data
+- 4 teams out of 24 had two goalkeepers play in the tournament.  All other teams kept playing the same goalkeeper.
 
 ## Other Statistics
 
