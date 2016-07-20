@@ -40,6 +40,7 @@ tab in a spreadsheet as the number of rows (players) varied from one measurement
 
 Goalkeeping-related data
 - 4 teams out of 24 had two goalkeepers play in the tournament.  All other teams kept playing the same goalkeeper.
+- This variation may pose a challenge for comparisons.
 
 ## Other Statistics
 
