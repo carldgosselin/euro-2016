@@ -57,6 +57,6 @@ Timing of goals:
 
 90+ min: 		9
 
-91-120	2
+91 to 120 min:	2
 
 
