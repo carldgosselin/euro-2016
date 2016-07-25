@@ -19,6 +19,7 @@ I pulled data from UEFA's euro 2016 website and Wikipedia's data on euro 2016 in
 * uefa_euro_2016_player_stats.xls
 * uefa_euro_2016_goalkeeping_stats.xls
 * wikipedia_euro_2016_stats.xls
+
 note:  It was not easy to pull information from UEFA's euro 2016 website.  The data had to be massaged to create a single spreadsheet for players.
 
 
