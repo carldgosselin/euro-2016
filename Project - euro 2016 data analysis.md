@@ -34,9 +34,9 @@ UEFA's euro 2016 website displays post-tournament statistics by team and by play
 
 Intended solution: 
 With machine learning algorithms, the intended solution will display more sophisticated analytics on team and player performance. The intended solution is to: 
-A) more clearly reveal which groupings of statistical labels are related to each other (covariance)
-B) reveal outliers in team-based statistics, 
-C) reveal outliers in player-based statistics
+* A) more clearly reveal which groupings of statistical labels are related to each other (covariance)
+* B) reveal outliers in team-based statistics, 
+* C) reveal outliers in player-based statistics
 
 Known challenges with the data:
 
@@ -81,10 +81,6 @@ strategy (outline of tasks) to achieve the desired solution:
 In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
 - _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
 - _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
-
-Metrics
-A) number of matches played
-B) 
 
 
 ## II. Analysis
