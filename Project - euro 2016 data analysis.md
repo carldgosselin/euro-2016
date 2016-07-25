@@ -1,5 +1,5 @@
-# Capstone Project
-## Machine Learning Engineer Nanodegree
+# On Hold...
+
 Carl Gosselin 
 July, 2016
 
