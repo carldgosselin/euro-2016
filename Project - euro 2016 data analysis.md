@@ -31,37 +31,49 @@ In this section, you will want to clearly define the problem that you are trying
 Problem:
 UEFA's euro 2016 website displays post-tournament statistics by team and by player.   With the current presentation of statistical data, it is easy to understand which player scored the most goals or which team possessed the ball the longest.  In other words, only basic and one-dimensional statistics are provided to re-count the performance by team and by player.  
 
+Intended solution: 
 With machine learning algorithms, the intended solution will display more sophisticated analytics on team and player performance. The intended solution is to: 
-A) more clearly reveal which groupings of statistical labels are related to each other
+A) more clearly reveal which groupings of statistical labels are related to each other (covariance)
 B) reveal outliers in team-based statistics, 
 C) reveal outliers in player-based statistics
 
 Known challenges with the data:
 
-challenge 1: The data provided on UEFA's euro 2016 website is limited in the sense that the data is not captured by tournament stages.  In other words, the data cannot show team and player performance at the end of the 3 initial games (group-stage).  Therefore, there will be some challenges in providing analysis on which teams were lucky to have advanced to the next stage in the tournament given the lack of "time-series" information.  Perhaps some of the machine learning algorithms can work-around this limitation?  Stay tuned.
+Data challenge 1: Need to avoid measuring "apples to oranges".  The data provided on UEFA's euro 2016 website is limited in the sense that the data is not captured by tournament stages.  All teams play the initial 3 games but then fewer and fewer teams continue to collect data as the tournament progresses to the final match-up.  The number of games played per team will need to be incorporated in the calculations to reflect appropriate comparisons.  
 
-challenge 2:  Need to avoid measuring "apples to oranges".  Team and player data will vary based on the number of games played in the tournament.  All teams play the initial 3 games but then fewer and fewer teams continue to collect data as the tournament progresses to the final match between two teams.  The number of games played in the tournament will need to incorporated in the calculations to reflect appropriate comparisons. 
+said another way, the data cannot show team and player performance at a point in time, such as the end of 3-games group stage.  Therefore, there will be some challenges in providing analysis on which teams were lucky to have advanced to the next stage in the tournament given the lack of "time-series" information.  Perhaps some of the machine learning algorithms can work-around this limitation?  Stay tuned.
 
-challenge 3:  Only three teams in the tournament used more than one goalkeeper.  Some of the data is split between two goalkeepers for the same team.  The data is kept separate for the moment but it may prove useful to merge the data as a single goalkeeper for team-based analytics.
+Data challenge 2:  3 out of 24 teams in the tournament used more than one goalkeeper.  Some of the data is split between two goalkeepers for the same team.  The data is kept separate for the moment but it may prove useful to merge the data as a single goalkeeper for team-based analytics.
 
-Basic outliers
-PCA analysis
+Data challenge 3:  Player-related data could not be easily amalgamated into a single tab in a spreadsheet as the number of rows (players) varied from one measurement to another
+e.g. some of the measurement excluded players who had "0" in all columns/measurements
+Action: Players omitted from the list had to be tracked-down, re-inserted and updated with "0"s across all columns (measurements)
+
+Data challenge 4:  Two players, from Italy and Portugal, have the same name: Éder.  I had to update their names to Éder (Italy) and Éder (Portugal) to make sure they wouldn't get mixed up during analysis.
 
 
 strategy (outline of tasks) to achieve the desired solution:
 
 - Pull statistical data from UEFA's euro 2016 website
 - Review the data
-- Cleanse and amalgamate the data
-- Prep the data for PCA?
-- Execute
-- Prep the data to identify team-based outliers
-- Execute
-- Prep the data to identify player-based outliers
-- Execute
-- Prep the data to identify goalkeep outliers
-
-
+- Cleanse and amalgamate the data for teams, players, and goalkeepers (subset of players)
+- Explore data - size of data
+- Explore data - features
+- Explore data - identify maximums of key measurements
+- Explore data - identify minimums of key measurements
+- Explore data - identify the mean of key measurements
+- Explore data - identify the median of key measurements
+- Explore data - identify the standard deviation of key measurements
+- Visualize data - team-based outliers
+- Visualize data - player-based outliers
+- Visualize data - goalkeeper outliers
+- Prep data - Identify features and target column(s)
+- Identify covariance in the data for the two teams reaching the final match-up
+- Identify covariance across teams that were eliminated at the same stage of the tournament:
+	- group-stage losers:		Romania, Albania, Russia, Turkey, Ukraine, Czech Republic, Sweden, Austria 
+	- round of 16 losers:		Switzerland, Northern Ireland, Croatia, Republic of Ireland, Slovakia, Hungary, Spain, England
+	- quarter-final losers:		Poland, Belgium, Italy, Iceland
+	- semi-final losers:		Germany, Wales
 
 
 ### Metrics
